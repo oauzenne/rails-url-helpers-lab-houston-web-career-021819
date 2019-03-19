@@ -6,6 +6,7 @@ class StudentsController < ApplicationController
   end
 
   def show
+<<<<<<< HEAD
       @student = Student.find(params[:id])
   end
 
@@ -14,6 +15,9 @@ class StudentsController < ApplicationController
     @student.active =! @student.active
     @student.save
     redirect_to student_path(@student)
+=======
+    @student = Student.find(params[:id])
+>>>>>>> 4c10c6a0beaa0ef7ebd91e31d24cdbf7fa6ae932
   end
 
 
